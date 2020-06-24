@@ -1,0 +1,21 @@
+<table>
+  <thead>
+  <tr>
+    <th
+      *ngFor="let cellTitle of cellTitles"
+    >{{cellTitle}}</th>
+  </tr>
+  </thead>
+  <app-row
+    *ngFor="let row of (rows$ | async); trackBy: trackRow"
+    (submitRow)="onSubmitRow($event)"
+    [row]="row"
+  >
+    <app-cell
+      *ngFor="let cell of cells"
+      [key]="cell.key"
+      [value]="row.data[cell.key]"
+      [editable]="cell.editable"
+    ></app-cell>
+  </app-row>
+</table>

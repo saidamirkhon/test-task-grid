@@ -1,0 +1,8 @@
+:host {
+  display: flex;
+  justify-content: center;
+  .grid-wrapper {
+    width: auto;
+    overflow: auto;
+  }
+}

@@ -1,0 +1,8 @@
+<ng-container *ngIf="editable && isEditMode; else viewModeTemplate">
+  <textarea
+    appAutoFocus
+    #editElement
+    [value]="value"
+  ></textarea>
+</ng-container>
+<ng-template #viewModeTemplate>{{value}}</ng-template>

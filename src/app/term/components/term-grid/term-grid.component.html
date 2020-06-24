@@ -1,0 +1,8 @@
+<div class="grid-wrapper">
+  <app-grid
+    [cells]="cells"
+    [cellTitles]="cellTitles"
+    [rows$]="rows$"
+    (submitRow)="onSubmitRow($event)"
+  ></app-grid>
+</div>

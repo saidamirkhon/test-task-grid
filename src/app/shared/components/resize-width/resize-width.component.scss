@@ -1,0 +1,7 @@
+:host {
+  width: 4px;
+  &:hover {
+    background: blue;
+    cursor: col-resize;
+  }
+}

@@ -1,0 +1,15 @@
+:host {
+  display: table-cell;
+
+  border: 1px solid #a6a6a6;
+
+  .header-cell-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .header-cell-content {
+      flex: 1;
+    }
+  }
+
+}
